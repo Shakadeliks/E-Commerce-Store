@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Press+Start+2P&family=Prosto+One&display=swap');
+
+
+body {
+    background: linear-gradient(-45deg, #d66b19, #666666, #000000, #eb955c);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    position: relative;
+}
+
+/* Styling for background Animation */
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.topNav {
+    background-color: #d66b19;
+    
+    align-items: center;
+}
+
+.display-1 {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    color: white;
+}
+
+.display-2 {
+    font-family: 'Orbitron', sans-serif;
+    color: #d66b19;
+    text-align: center;
+}
+
+.ProductCatalogue,
+.products-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+
+/*.image {
+    margin: right 20px;
+    margin-left: 20px;
+    position: relative;
+    overflow: hidden;
+} */
+
+ /* Styling for the format of the products dipslayed on the catalogue page */
+.col-4 {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+
+.col-4 img {
+    width: 100%;
+}
+
+.col-md-6 {
+    margin: auto;
+    color: white;
+} 
+
+.title {
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+}
+
+.productPrice {
+    color: #d66b19;
+    font-weight: 700;
+    font-size: large;
+    text-align: center;
+}
+
+.add-cart {
+    position: absolute;
+    width: 100%;
+    background-color: darkgrey;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    cursor: pointer;
+    text-align: center;
+}
+
+.text-center {
+    color: white;
+}
+
+.contact-info {
+    color: white;
+}
+
+.contact-form{
+    color: white;
+}
+
+#accordianSections {
+    margin: auto;
+    text-align: center;
+}
+
+.image:hover .cart1,
+.image:hover .cart2,
+.image:hover .cart3,
+.image:hover .cart4,
+.image:hover .cart5,
+.image:hover .cart6,
+.image:hover .cart7,
+.image:hover .cart8,
+.image:hover .cart9,
+.image:hover .cart10,
+.image:hover .cart11,
+.image:hover .cart12,
+.image:hover .cart13,
+.image:hover .cart14,
+.image:hover .cart15,
+.image:hover .cart16 {
+    bottom: 50px;
+    opacity: 1;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.icon-list {
+    text-align: center;
+    display: inline;
+}
+
+/*css styling for the social media icons*/
+.icon-div {
+    color: white;
+    display: inline;
+}
+
+.button {
+    color: rgb(150, 40, 150);
+    border: solid 3px #fff;
+    border-radius: 40%;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 48px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+#delOptionsDivs {
+    padding: 20px;
+    margin: 30px;
+}
+
+#collectDiv {
+    align-self: auto;
+
+    text-align: center;
+}
+
+.col-md-12{
+    margin: 80px auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+thead {
+    background: #d66b19;
+    text-align: left;
+    font-weight: bolder;
+}
+
+.cartContent {
+    color: white;
+    font-size: large;
+}
+
+/* Carousels */
+.carousel-control.right,
+.carousel-control.left {
+    background: none;
+    color: #888;
+}
+
+#featuredCarousel {
+    margin-bottom: 25px;
+}
+
+#featuredCarousel .carousel {
+    height: 500px;
+}
+
+#featuredCarousel .carousel .item {
+    height: 500px;
+    color: white;
+}
+
+#testimonialCarousel .carousel {
+    height: 175px;
+}
+
+#testimonialCarousel .item {
+    margin: 0 auto;
+    width: 50%;
+    color: white;
+}
+
+/* Testimonials */
+#testimonialCarousel p {
+    font-size: 18px;
+    font-weight: 200;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+#testimonialCarousel p.testimonial_author {
+    color: #03518d;
+    font-family: 'Old Standard TT', serif;
+    font-weight: 400;
+    font-style: italic;
+    text-transform: none;
+    font-size: 36px;
+    margin-top: 25px;
+}
